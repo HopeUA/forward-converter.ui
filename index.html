@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <style>
+        .upload-drop-zone {
+            height: 200px;
+            border-width: 2px;
+            margin-bottom: 20px;
+            color: #ccc;
+            border-style: dashed;
+            border-color: #ccc;
+            line-height: 200px;
+            text-align: center
+        }
+        .upload-drop-zone.drop {
+            color: #222;
+            border-color: #222;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading"><strong>Forward Converter Service</strong> <small>Конвертация логов форварда в формат Excel</small></div>
+        <div class="panel-body">
+
+            <!-- Standar Form -->
+            <h4>Загрузите файл с компьютера</h4>
+            <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+            <div class="form-inline">
+                <div class="form-group">
+                    <input type="file" name="files[]" id="js-upload-files" multiple>
+                </div>
+                <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Загрузить</button>
+            </div>
+            </form>
+
+            <!-- Drop Zone -->
+            <h4>Или перетяните мышкой</h4>
+            <div class="upload-drop-zone" id="drop-zone">
+                Перетяните файлы в эту область
+            </div>
+
+            <!-- Upload Finished -->
+            <div class="js-upload-finished">
+                <h3>Обработанные файлы</h3>
+                <div class="list-group" id="file-container">
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- /container -->
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
