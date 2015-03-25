@@ -1,11 +1,8 @@
-+ function($) {
++function($) {
     'use strict';
 
-    // UPLOAD CLASS DEFINITION
-    // ======================
-
-    var dropZone   = document.getElementById('drop-zone');
-    var uploadForm = document.getElementById('js-upload-form');
+    var dropZone      = document.getElementById('drop-zone');
+    var uploadForm    = document.getElementById('js-upload-form');
     var fileContainer = document.getElementById('file-container');
 
     var converterApiEndpoint = 'http://forward-converter.s.hope.ua/v1';
