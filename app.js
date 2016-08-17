@@ -5,8 +5,7 @@
     var uploadForm    = document.getElementById('js-upload-form');
     var fileContainer = document.getElementById('file-container');
 
-    // var converterApiEndpoint = 'http://forward-converter.hopetv.ru/v1';
-    var converterApiEndpoint = 'https://forward-converter.hope.ua/v1';
+    var converterApiEndpoint = 'https://forward-converter-s.hopetv.ru/v1';
 
     var normalizeXml = function(xml) {
         if (xml.search('<?xml') == -1) {
