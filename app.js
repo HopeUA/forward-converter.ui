@@ -6,6 +6,7 @@
     const fileContainer = document.getElementById('file-container');
 
     const converterApiEndpoint = 'https://log-converter-s.hopetv.ru';
+    // const converterApiEndpoint = 'http://localhost:3000';
     const converterApiVersion = 2;
 
     const processFiles = function(files) {
@@ -40,7 +41,8 @@
                     fetch(url, {
                         method: 'POST',
                         headers: {
-                            'Content-Type': 'application/octet-stream'
+                            'Content-Type': 'application/octet-stream',
+                            'X-Hope-FileName': theFile.name
                         },
                         body: logData
                     }).then((response) => {
